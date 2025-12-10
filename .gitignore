@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# MkDocs
+site/
+
+# Processed files
+# incoming/*.pdf
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
