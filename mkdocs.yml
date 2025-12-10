@@ -1,0 +1,53 @@
+site_name: PQQ Manager Site
+docs_dir: drafts
+theme: readthedocs
+nav:
+  - Home: index.md
+  - PQQ Drafts:
+    - "Annex-A-Core-PQQ-questions": Annex-A-Core-PQQ-questions.md
+    - "New PQQ Test": New_PQQ_Test.md
+    - "PQQ 1 Full": PQQ_1_Full.md
+    - "PQQ 2 Full": PQQ_2_Full.md
+    - "PQQ 3 Full": PQQ_3_Full.md
+    - "PQQ 4 Sample": PQQ_4_Sample.md
+    - "PQQ 5 Sample": PQQ_5_Sample.md
+    - "PQQ 6 Sample": PQQ_6_Sample.md
+  - Evidence Library:
+    - "Company":
+      - "company contact person": evidence_library/company/company_contact_person.md
+      - "company legal details": evidence_library/company/company_legal_details.md
+      - "company overview": evidence_library/company/company_overview.md
+      - "company structure": evidence_library/company/company_structure.md
+      - "equipment owned": evidence_library/company/equipment_owned.md
+      - "staffing levels": evidence_library/company/staffing_levels.md
+      - "subcontractor policy": evidence_library/company/subcontractor_policy.md
+    - "Financial":
+      - "financial accounts": evidence_library/financial/financial_accounts.md
+      - "financial turnover": evidence_library/financial/financial_turnover.md
+      - "professional indemnity insurance": evidence_library/financial/professional_indemnity_insurance.md
+    - "Health and safety":
+      - "health and safety accident log": evidence_library/health_and_safety/health_and_safety_accident_log.md
+      - "health and safety accreditations": evidence_library/health_and_safety/health_and_safety_accreditations.md
+      - "health and safety competent person": evidence_library/health_and_safety/health_and_safety_competent_person.md
+      - "health and safety policy": evidence_library/health_and_safety/health_and_safety_policy.md
+      - "health and safety riddor": evidence_library/health_and_safety/health_and_safety_riddor.md
+    - "Policies":
+      - "carbon reduction plan": evidence_library/policies/carbon_reduction_plan.md
+      - "data protection gdpr": evidence_library/policies/data_protection_gdpr.md
+      - "declarations grounds for rejection": evidence_library/policies/declarations_grounds_for_rejection.md
+      - "declarations misconduct and compliance": evidence_library/policies/declarations_misconduct_and_compliance.md
+      - "environmental strategy": evidence_library/policies/environmental_strategy.md
+      - "equality diversity policy": evidence_library/policies/equality_diversity_policy.md
+      - "modern slavery declaration": evidence_library/policies/modern_slavery_declaration.md
+      - "quality iso 14001": evidence_library/policies/quality_iso_14001.md
+      - "waste management policy": evidence_library/policies/waste_management_policy.md
+    - "Projects":
+      - "case studies summary": evidence_library/projects/case_studies_summary.md
+      - "client references": evidence_library/projects/client_references.md
+      - "example reports": evidence_library/projects/example_reports.md
+      - "fieldwork capabilities": evidence_library/projects/fieldwork_capabilities.md
+      - "planning consultancy services": evidence_library/projects/planning_consultancy_services.md
+      - "post excavation services": evidence_library/projects/post_excavation_services.md
+      - "project scale and duration": evidence_library/projects/project_scale_and_duration.md
+  - Processed Log: processed_log.md
+
