@@ -1,5 +1,5 @@
 site_name: PQQ Manager Site
-docs_dir: drafts
+docs_dir: docs
 theme: readthedocs
 nav:
   - Home: index.md
