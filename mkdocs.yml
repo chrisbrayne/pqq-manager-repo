@@ -3,15 +3,16 @@ docs_dir: docs
 theme: readthedocs
 nav:
   - Home: index.md
+  - Guide: guide.md
   - PQQ Drafts:
-    - "Annex-A-Core-PQQ-questions": Annex-A-Core-PQQ-questions.md
-    - "New PQQ Test": New_PQQ_Test.md
-    - "PQQ 1 Full": PQQ_1_Full.md
-    - "PQQ 2 Full": PQQ_2_Full.md
-    - "PQQ 3 Full": PQQ_3_Full.md
-    - "PQQ 4 Sample": PQQ_4_Sample.md
-    - "PQQ 5 Sample": PQQ_5_Sample.md
-    - "PQQ 6 Sample": PQQ_6_Sample.md
+    - "Annex-A-Core-PQQ-questions": pqq_drafts/Annex-A-Core-PQQ-questions.md
+    - "New PQQ Test": pqq_drafts/New_PQQ_Test.md
+    - "PQQ 1 Full": pqq_drafts/PQQ_1_Full.md
+    - "PQQ 2 Full": pqq_drafts/PQQ_2_Full.md
+    - "PQQ 3 Full": pqq_drafts/PQQ_3_Full.md
+    - "PQQ 4 Sample": pqq_drafts/PQQ_4_Sample.md
+    - "PQQ 5 Sample": pqq_drafts/PQQ_5_Sample.md
+    - "PQQ 6 Sample": pqq_drafts/PQQ_6_Sample.md
   - Evidence Library:
     - "Company":
       - "company contact person": evidence_library/company/company_contact_person.md
@@ -49,5 +50,4 @@ nav:
       - "planning consultancy services": evidence_library/projects/planning_consultancy_services.md
       - "post excavation services": evidence_library/projects/post_excavation_services.md
       - "project scale and duration": evidence_library/projects/project_scale_and_duration.md
-  - Processed Log: processed_log.md
 
