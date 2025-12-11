@@ -82,4 +82,4 @@ def update_mkdocs_config(new_nav):
     
     with open(MKDOCS_CONFIG_FILE, 'w') as f:
         yaml.dump(config, f, default_flow_style=False, sort_keys=False)
-    print(f
+    print(f"'{MKDOCS_CONFIG_FILE}' updated successfully.")
