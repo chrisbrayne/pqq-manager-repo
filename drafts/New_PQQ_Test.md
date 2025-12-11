@@ -2,7 +2,7 @@
 ---
 ### Q: Company Name:
 
-## Company Legal & Registered Details
+# Company Legal & Registered Details
 
 - **Legal Name:** Archaeo-Consult Ltd.
 - **Trading Name:** Same as Legal Name.
@@ -13,7 +13,7 @@
 ---
 ### Q: Registered Address:
 
-## Company Legal & Registered Details
+# Company Legal & Registered Details
 
 - **Legal Name:** Archaeo-Consult Ltd.
 - **Trading Name:** Same as Legal Name.
@@ -46,7 +46,7 @@ Archaeo-Consult Ltd. holds comprehensive insurance cover suitable for the scale 
 Certificates of insurance are available upon request.
 
 ---
-### Q: Describe your approach to Health and and Safety.
+### Q: Describe your approach to Health and Safety.
 
 # Health & Safety Policy Statement
 
@@ -100,7 +100,7 @@ Our data protection policy outlines our commitment to handling personal data law
 
 # Equality, Diversity, and Inclusion (EDI) Policy
 
-Archaeo-Consult Ltd. is an Equal Opportunities Employer and is committed to fostering an inclusive and diverse workplace where all individuals are treated with dignity and respect.
+Archaaeo-Consult Ltd. is an Equal Opportunities Employer and is committed to fostering an inclusive and diverse workplace where all individuals are treated with dignity and respect.
 
 Our Equality, Diversity, and Inclusion Policy ensures that no employee, job applicant, or contractor receives less favourable treatment on the grounds of age, disability, gender reassignment, marriage and civil partnership, pregnancy and maternity, race, religion or belief, sex, or sexual orientation. We actively promote diversity within our workforce and throughout our operations.
 
