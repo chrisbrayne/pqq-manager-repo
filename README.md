@@ -9,9 +9,10 @@ This guide explains how to use the PQQ (Pre-Qualification Questionnaire) Manager
 This system is designed to speed up the process of filling out PQQs. It works by:
 *   Taking PQQ documents (`.pdf` or `.docx` files) from your `incoming/` folder.
 *   Using Google's Gemini AI to extract questions from these documents.
-*   Searching your library of pre-written "evidence" (Markdown files in `evidence/`) for the best answer to each question, also powered by Gemini AI.
+*   Searching your **structured library of pre-written "evidence"** (Markdown files in `evidence/` subfolders) for the best answer to each question, also powered by Gemini AI.
 *   Generating a draft response in Markdown format for each PQQ, which is saved in the `drafts/` folder.
 *   Automatically version controlling these drafts using Git, including committing and pushing to a remote repository (like GitHub).
+*   Automatically building a **searchable static website** (using MkDocs) with dynamic navigation from your drafts, evidence library, and a log of processed files, deployed on Netlify.
 
 ---
 
@@ -20,10 +21,10 @@ This system is designed to speed up the process of filling out PQQs. It works by
 The system is organized into a few key folders:
 
 -   `incoming/`: **Your Starting Point.** Drop new PQQ documents (as `.pdf` or `.docx` files) into this folder.
-    *   `incoming/processed/`: After a document is successfully processed, it will be moved here to keep your `incoming/` folder tidy.
--   `evidence/`: **Your Knowledge Base.** This folder contains all the pre-written snippets of information about your company (e.g., insurance details, company history, service descriptions, policies). Each piece of evidence should be a separate `.md` file.
--   `drafts/`: **The Output.** After you run the tool, a new draft response file (e.g., `Client-A-PQQ.md`) will appear here for each processed PQQ. These are automatically added to your Git repository.
--   `docs/`: This folder is intended for use with MkDocs to publish your drafts as a browsable website.
+    *   `incoming/processed/`: After a document is successfully processed, it will be moved here to keep your `incoming/` folder tidy. These files are also listed on the MkDocs site.
+-   `evidence/`: **Your Structured Knowledge Base.** This folder contains all the pre-written snippets of information about your company. **Organize these `.md` files into subfolders** (e.g., `evidence/company/`, `evidence/financial/`, `evidence/health_and_safety/`). This structure will be mirrored in the MkDocs website navigation.
+-   `drafts/`: **The Output.** After you run the `run-pqq-manager.ps1` script, a new draft response file (e.g., `Client-A-PQQ.md`) will appear here for each processed PQQ. These are automatically added to your Git repository and dynamically linked in the MkDocs site.
+    *   `drafts/evidence_library/`: This folder is automatically created and populated by the `build-site.ps1` script to make your evidence visible to MkDocs. You generally don't need to interact with it directly.
 
 ---
 
@@ -61,40 +62,38 @@ For permanent setup, please refer to guides on setting system-level environment 
     *   Automatically `git add`, `git commit`, and `git push` these new drafts to your remote repository.
     *   Move the processed original document to `incoming/processed/`.
 
-### Step 3: Review the Drafts
+### Step 3: Build and Deploy the Website
 
--   Go to the `drafts/` folder.
--   Open the generated Markdown files (e.g., `Client-A-PQQ.md`) to review, edit, and copy the content as needed. Since they are already committed and pushed, your team can access them via your Git repository.
+After running the manager script and pushing changes to GitHub, you need to rebuild your MkDocs site.
+
+-   Open PowerShell (in the `pqq-manager` folder).
+-   **To build and preview locally:**
+    ```powershell
+    .\build-site.ps1
+    mkdocs serve
+    ```
+    Open your web browser and go to `http://127.0.0.1:8000`. You will see a dynamically generated navigation menu with sections for "PQQ Drafts", "Evidence Library" (structured by folders), and a "Processed Log".
+-   **To build and deploy to GitHub Pages (or trigger Netlify deployment):**
+    ```powershell
+    .\build-site.ps1 -DeployToGitHub
+    ```
+    *(Note: For Netlify, the `git push` from `run-pqq-manager.ps1` will automatically trigger the build. This local deploy command is primarily for GitHub Pages.)*
+
+### Step 4: Review the Drafts and Website
+
+-   Go to the `drafts/` folder to open and review the generated Markdown files directly.
+-   Access your deployed Netlify site (or local `mkdocs serve` preview) to browse your dynamically updated documentation.
 
 ---
 
 ## Managing Your Evidence
 
-You can significantly improve the system's accuracy and coverage by continuously adding to and updating the files in the `evidence/` folder.
+To maximize the effectiveness of the system:
 
--   **To Add New Evidence:** Create a new `.md` file in the `evidence/` folder. Give it a descriptive name (e.g., `sustainability_policy.md`).
--   **To Update Evidence:** Open an existing `.md` file, make your changes, and save it.
+-   Organize your evidence: **Create subfolders within `evidence/`** (e.g., `evidence/company/`, `evidence/financial/`) and place related `.md` files there. The `build-site.ps1` script will automatically create a nested navigation for these on the website.
+-   Add New Evidence: Simply create new `.md` files in the appropriate `evidence/` subfolder.
+-   Update Existing Evidence: Open an existing `.md` file, make your changes, and save it.
 
-The more comprehensive and accurate your evidence library is, the better the automated responses will be. Remember to commit any changes to your `evidence/` files to Git as well.
+Remember to `git add`, `git commit`, and `git push` any changes to your `evidence/` files manually (or run `run-pqq-manager.ps1` if you've processed a file, which will also commit outstanding changes) to ensure your remote repository and Netlify site are up-to-date.
 
 ---
-
-## Viewing the Website (Optional - MkDocs)
-
-To publish your generated drafts and evidence as a browsable static website (e.g., on GitHub Pages):
-
-1.  Open a terminal in the `pqq-manager` folder.
-2.  **To preview locally:**
-    ```powershell
-    mkdocs serve
-    ```
-    Open your web browser and go to `http://127.0.0.1:8000`.
-3.  **To build the static site:**
-    ```powershell
-    mkdocs build
-    ```
-4.  **To deploy to GitHub Pages:**
-    ```powershell
-    mkdocs gh-deploy
-    ```
-    (Ensure `ghp-import` is installed: `pip install ghp-import`)
