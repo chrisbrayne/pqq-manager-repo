@@ -32,11 +32,7 @@ if ($sourceFiles.Count -eq 0) {
     exit
 }
 
-# Check for API Key before starting
-if (-not $env:PQQ_API_KEY) {
-    Write-Error "The 'PQQ_API_KEY' environment variable is not set. Please set it before running the script."
-    exit
-}
+# Placeholder for potential future API key check in PowerShell, if needed.
 
 # --- AI and File Integration Functions ---
 # (These functions remain unchanged)
@@ -96,20 +92,16 @@ function Invoke-GitCommit {
         [string]$FilePath,
         [string]$CommitMessage
     )
-    Write-Host "  [Git] Staging file: $FilePath"
+    Write-Host "  [Git] Staging files for commit..."
     git -C $GitRepoDir add $FilePath
+    git -C $GitRepoDir add (Join-Path $GitRepoDir "mkdocs.yml") # Add the updated mkdocs.yml
     if ($LASTEXITCODE -ne 0) { Write-Error "Git add failed." }
 
     Write-Host "  [Git] Committing with message: '$CommitMessage'"
     git -C $GitRepoDir commit -m $CommitMessage
     if ($LASTEXITCODE -ne 0) { Write-Error "Git commit failed." }
 
-    Write-Host "  [Git] Git commit successful."
-
-    Write-Host "  [Git] Pushing changes to remote..."
-    git -C $GitRepoDir push
-    if ($LASTEXITCODE -ne 0) { Write-Error "Git push failed." }
-    Write-Host "  [Git] Git push successful."
+    Write-Host "  [Git] Git commit successful (local only). Push manually when ready."
 }
 
 
@@ -160,6 +152,14 @@ foreach ($sourceFile in $sourceFiles) {
     $outputPath = Join-Path $DraftsDir $outputFileName
     Set-Content -Path $outputPath -Value $draftContent.ToString() -Encoding UTF8
     Write-Host "Success! Draft response saved to: $outputPath"
+
+    # --- NEW: Run Python build script to update mkdocs.yml and copy files ---
+    Write-Host "  [PY] Running Python build script to update MkDocs configuration..."
+    python.exe (Join-Path $PSScriptRoot "build_menu.py")
+    if ($LASTEXITCODE -ne 0) {
+        Write-Error "Python build preparation script failed during PQQ processing."
+        exit
+    }
 
     # Perform Git operations
     $commitMessage = "Auto-filled PQQ draft for $($sourceFile.BaseName)"

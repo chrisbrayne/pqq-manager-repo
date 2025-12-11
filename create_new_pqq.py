@@ -2,21 +2,22 @@
 # This script generates a new dummy PQQ .docx file for testing.
 
 import os
+import sys
 import docx
 
 INCOMING_DIR = os.path.join(os.path.dirname(__file__), 'incoming')
 
 NEW_PQQ_QUESTIONS = [
-    "Company Name:",
-    "Registered Address:",
-    "Provide evidence of your Professional Indemnity Insurance.",
-    "Describe your approach to Health and Safety.",
-    "Provide details of your quality management system.",
-    "List any RIDDOR incidents in the past 3 years.",
-    "Provide your carbon reduction plan.",
-    "Provide details on your data protection (GDPR) compliance.",
-    "Outline your equality and diversity policy.",
-    "Provide a modern slavery declaration.",
+    "What is your Company Name?",
+    "What is your Registered Address?",
+    "Can you provide evidence of your Professional Indemnity Insurance?",
+    "Please describe your approach to Health and Safety.",
+    "Could you provide details of your quality management system?",
+    "Have you had any RIDDOR incidents in the past 3 years? If so, please list them.",
+    "Do you have a carbon reduction plan? Please describe it.",
+    "How do you ensure data protection (GDPR) compliance?",
+    "Please outline your equality and diversity policy.",
+    "Can you provide a modern slavery declaration?",
 ]
 
 def create_docx(filename, questions):
@@ -34,5 +35,8 @@ if __name__ == "__main__":
     if not os.path.exists(INCOMING_DIR):
         print(f"Error: The directory '{INCOMING_DIR}' does not exist.")
     else:
-        create_docx("New_PQQ_Test.docx", NEW_PQQ_QUESTIONS)
-        print("New dummy PQQ file created: New_PQQ_Test.docx.")
+        filename = "New_PQQ_Test.docx"
+        if len(sys.argv) > 1:
+            filename = sys.argv[1]
+        create_docx(filename, NEW_PQQ_QUESTIONS)
+        print(f"New dummy PQQ file created: {filename}.")

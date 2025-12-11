@@ -7,7 +7,11 @@ import sys
 import json
 import pypdf
 import docx # Added for .docx support
+from dotenv import load_dotenv
 import google.generativeai as genai
+
+# Load environment variables from .env file
+load_dotenv()
 
 # --- IMPORTANT: API Key Configuration ---
 # The script expects your Gemini API key to be stored in an environment variable

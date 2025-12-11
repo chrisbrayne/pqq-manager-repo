@@ -8,11 +8,10 @@ This guide explains how to use the PQQ (Pre-Qualification Questionnaire) Manager
 
 This system is designed to speed up the process of filling out PQQs. It works by:
 *   Taking PQQ documents (`.pdf` or `.docx` files) from your `incoming/` folder.
-*   Using Google's Gemini AI to extract questions from these documents.
-*   Searching your **structured library of pre-written "evidence"** (Markdown files in `evidence/` subfolders) for the best answer to each question, also powered by Gemini AI.
-*   Generating a draft response in Markdown format for each PQQ, which is saved in the `drafts/` folder.
-*   Automatically version controlling these drafts using Git, including committing and pushing to a remote repository (like GitHub).
-*   Automatically building a **searchable static website** (using MkDocs) with dynamic navigation from your drafts, evidence library, and a log of processed files, deployed on Netlify.
+*   Using Google's Gemini AI to extract questions and find answers from your **structured library of pre-written "evidence"**.
+*   Generating a draft response in Markdown format for each PQQ.
+*   Automatically updating a **searchable static website** (using MkDocs) with the new draft and a dynamically generated navigation menu.
+*   Bundling all changes into a **local Git commit**, ready for you to review and push to your remote repository for deployment.
 
 ---
 
@@ -43,46 +42,48 @@ For permanent setup, please refer to guides on setting system-level environment 
 
 ## Step-by-Step Workflow
 
+This workflow is designed for batching changes locally before deploying them in a single push.
+
 ### Step 1: Add New PQQ Documents
 
--   Place new PQQ documents (as `.pdf` or `.docx` files) into the `incoming/` folder. You can place multiple documents there.
+-   Place one or more new PQQ documents (`.pdf` or `.docx` files) into the `incoming/` folder.
 
 ### Step 2: Run the Manager Script
 
--   Open PowerShell (you can right-click in the `pqq-manager` folder and choose "Open in Terminal").
--   Run the main script with the following command:
-
+-   Open a PowerShell terminal in the `pqq-manager` folder.
+-   Run the main script for each new document:
     ```powershell
     .\run-pqq-manager.ps1
     ```
--   The script will:
-    *   Process **all** supported documents found in `incoming/`.
-    *   Extract questions and find matching evidence using Gemini AI.
-    *   Generate a Markdown draft in `drafts/` for each document.
-    *   Automatically `git add`, `git commit`, and `git push` these new drafts to your remote repository.
-    *   Move the processed original document to `incoming/processed/`.
+-   For each document found, the script will:
+    *   Generate a Markdown draft in the `drafts/` folder.
+    *   **Automatically update the website navigation** to include the new draft.
+    *   Create a **local Git commit** containing both the new draft and the updated navigation. It **will not** push to the remote repository.
+    *   Move the processed document to `incoming/processed/`.
+-   You can repeat Steps 1 and 2 multiple times to create a batch of local changes.
 
-### Step 3: Build and Deploy the Website
+### Step 3: Test Locally (Recommended)
 
-After running the manager script and pushing changes to GitHub, you need to rebuild your MkDocs site.
-
--   Open PowerShell (in the `pqq-manager` folder).
--   **To build and preview locally:**
+-   After processing all desired files, you can preview the entire site.
+-   Run the local web server:
     ```powershell
-    .\build-site.ps1
     mkdocs serve
     ```
-    Open your web browser and go to `http://127.0.0.1:8000`. You will see a dynamically generated navigation menu with sections for "PQQ Drafts", "Evidence Library" (structured by folders), and a "Processed Log".
--   **To build and deploy to GitHub Pages (or trigger Netlify deployment):**
+-   Open your web browser and go to `http://127.0.0.1:8000`.
+-   Verify that all your new drafts appear correctly in the navigation menu and that the content is as expected. Press `Ctrl+C` in the terminal to stop the server when you are done.
+
+### Step 4: Deploy to Netlify
+
+-   When you are satisfied with your batch of local changes, push them to your remote repository.
+-   Run the following command from the `pqq-manager` folder:
     ```powershell
-    .\build-site.ps1 -DeployToGitHub
+    git push
     ```
-    *(Note: For Netlify, the `git push` from `run-pqq-manager.ps1` will automatically trigger the build. This local deploy command is primarily for GitHub Pages.)*
-
-### Step 4: Review the Drafts and Website
-
--   Go to the `drafts/` folder to open and review the generated Markdown files directly.
--   Access your deployed Netlify site (or local `mkdocs serve` preview) to browse your dynamically updated documentation.
+    Alternatively, you can use the `deploy-to-github.ps1` script for this:
+    ```powershell
+    .\deploy-to-github.ps1 -CommitMessage "Optional: Your custom commit message"
+    ```
+-   This will send all your local commits to GitHub, which will automatically trigger Netlify to build and deploy your updated site.
 
 ---
 
@@ -90,10 +91,10 @@ After running the manager script and pushing changes to GitHub, you need to rebu
 
 To maximize the effectiveness of the system:
 
--   Organize your evidence: **Create subfolders within `evidence/`** (e.g., `evidence/company/`, `evidence/financial/`) and place related `.md` files there. The `build-site.ps1` script will automatically create a nested navigation for these on the website.
+-   Organize your evidence: **Create subfolders within `evidence/`** (e.g., `evidence/company/`, `evidence/financial/`) and place related `.md` files there. The `build_menu.py` script will automatically create a nested navigation for these on the website.
 -   Add New Evidence: Simply create new `.md` files in the appropriate `evidence/` subfolder.
 -   Update Existing Evidence: Open an existing `.md` file, make your changes, and save it.
 
-Remember to `git add`, `git commit`, and `git push` any changes to your `evidence/` files manually (or run `run-pqq-manager.ps1` if you've processed a file, which will also commit outstanding changes) to ensure your remote repository and Netlify site are up-to-date.
+Remember to `git add` and `git commit` any changes to your `evidence/` files manually. You can then push them along with your other batched changes when you are ready to deploy.
 
 ---

@@ -24,20 +24,26 @@ Write-Host "-------------------------------------------"
 
 # 2. Build the MkDocs site
 Write-Host "Running 'mkdocs build'..."
+Push-Location $PSScriptRoot # Change directory to script root
 mkdocs build
 if ($LASTEXITCODE -ne 0) {
     Write-Error "MkDocs build failed."
+    Pop-Location # Pop location even if it fails
     exit
 }
+Pop-Location # Restore original directory
 Write-Host "MkDocs site built successfully in the 'site' directory."
 
 # 3. Deploy to GitHub Pages if requested
 if ($DeployToGitHub.IsPresent) {
     Write-Host "Deploying to GitHub Pages..."
+    Push-Location $PSScriptRoot # Change directory to script root
     mkdocs gh-deploy
     if ($LASTEXITCODE -ne 0) {
         Write-Error "MkDocs deployment to GitHub Pages failed."
+        Pop-Location # Pop location even if it fails
         exit
     }
+    Pop-Location # Restore original directory
     Write-Host "Deployment to GitHub Pages successful."
 }
