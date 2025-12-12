@@ -22,8 +22,6 @@ Full, independently audited accounts for the previous two financial years are av
 ---
 ### Q: Please provide your H&S Policy document.
 
-# Health & Safety Policy Statement
-
 Archaeo-Consult Ltd. is committed to ensuring the health, safety, and welfare of its employees, clients, contractors, and the public. We recognise our responsibility under the Health and Safety at Work etc. Act 1974 and associated regulations.
 
 *   All fieldwork is governed by site-specific Risk Assessments and Method Statements (RAMS).
@@ -43,8 +41,6 @@ Archaeo-Consult Ltd. maintains an excellent safety record. We can confirm there 
 
 ---
 ### Q: Which H&S competence schemes are you a member of (e.g., CHAS)?
-
-# Health & Safety Competence and Accreditation
 
 Archaeo-Consult Ltd. is committed to maintaining the highest standards of health and safety. We are an accredited member of the Contractors Health and Safety Assessment Scheme (CHAS).
 
