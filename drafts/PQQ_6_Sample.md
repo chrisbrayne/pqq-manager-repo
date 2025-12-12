@@ -2,9 +2,7 @@
 ---
 ### Q: Provide evidence of your quality management system (e.g., ISO 9001).
 
-All work is undertaken in accordance with CIfA Standards and Guidance.
-
-**Sources:** [company_overview.md](../evidence/company/company_overview.md)
+!!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
 
 ---
 ### Q: Provide evidence of your environmental management system (e.g., ISO 14001).
