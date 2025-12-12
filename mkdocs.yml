@@ -20,38 +20,38 @@ nav:
   - Thursdaypqq: pqq_drafts\ThursdayPQQ.md
 - Evidence Library:
   - Company:
-    - Company Contact Person: evidence_library\company\company_contact_person.md
-    - Company Legal Details: evidence_library\company\company_legal_details.md
-    - Company Overview: evidence_library\company\company_overview.md
-    - Company Structure: evidence_library\company\company_structure.md
-    - Equipment Owned: evidence_library\company\equipment_owned.md
-    - Staffing Levels: evidence_library\company\staffing_levels.md
-    - Subcontractor Policy: evidence_library\company\subcontractor_policy.md
+    - Company Contact Person: evidence\company\company_contact_person.md
+    - Company Legal Details: evidence\company\company_legal_details.md
+    - Company Overview: evidence\company\company_overview.md
+    - Company Structure: evidence\company\company_structure.md
+    - Equipment Owned: evidence\company\equipment_owned.md
+    - Staffing Levels: evidence\company\staffing_levels.md
+    - Subcontractor Policy: evidence\company\subcontractor_policy.md
   - Financial:
-    - Financial Accounts: evidence_library\financial\financial_accounts.md
-    - Financial Turnover: evidence_library\financial\financial_turnover.md
-    - Professional Indemnity Insurance: evidence_library\financial\professional_indemnity_insurance.md
+    - Financial Accounts: evidence\financial\financial_accounts.md
+    - Financial Turnover: evidence\financial\financial_turnover.md
+    - Professional Indemnity Insurance: evidence\financial\professional_indemnity_insurance.md
   - Health And Safety:
-    - Health And Safety Accident Log: evidence_library\health_and_safety\health_and_safety_accident_log.md
-    - Health And Safety Accreditations: evidence_library\health_and_safety\health_and_safety_accreditations.md
-    - Health And Safety Competent Person: evidence_library\health_and_safety\health_and_safety_competent_person.md
-    - Health And Safety Policy: evidence_library\health_and_safety\health_and_safety_policy.md
-    - Health And Safety Riddor: evidence_library\health_and_safety\health_and_safety_riddor.md
+    - Health And Safety Accident Log: evidence\health_and_safety\health_and_safety_accident_log.md
+    - Health And Safety Accreditations: evidence\health_and_safety\health_and_safety_accreditations.md
+    - Health And Safety Competent Person: evidence\health_and_safety\health_and_safety_competent_person.md
+    - Health And Safety Policy: evidence\health_and_safety\health_and_safety_policy.md
+    - Health And Safety Riddor: evidence\health_and_safety\health_and_safety_riddor.md
   - Policies:
-    - Carbon Reduction Plan: evidence_library\policies\carbon_reduction_plan.md
-    - Data Protection Gdpr: evidence_library\policies\data_protection_gdpr.md
-    - Declarations Grounds For Rejection: evidence_library\policies\declarations_grounds_for_rejection.md
-    - Declarations Misconduct And Compliance: evidence_library\policies\declarations_misconduct_and_compliance.md
-    - Environmental Strategy: evidence_library\policies\environmental_strategy.md
-    - Equality Diversity Policy: evidence_library\policies\equality_diversity_policy.md
-    - Modern Slavery Declaration: evidence_library\policies\modern_slavery_declaration.md
-    - Quality Iso 14001: evidence_library\policies\quality_iso_14001.md
-    - Waste Management Policy: evidence_library\policies\waste_management_policy.md
+    - Carbon Reduction Plan: evidence\policies\carbon_reduction_plan.md
+    - Data Protection Gdpr: evidence\policies\data_protection_gdpr.md
+    - Declarations Grounds For Rejection: evidence\policies\declarations_grounds_for_rejection.md
+    - Declarations Misconduct And Compliance: evidence\policies\declarations_misconduct_and_compliance.md
+    - Environmental Strategy: evidence\policies\environmental_strategy.md
+    - Equality Diversity Policy: evidence\policies\equality_diversity_policy.md
+    - Modern Slavery Declaration: evidence\policies\modern_slavery_declaration.md
+    - Quality Iso 14001: evidence\policies\quality_iso_14001.md
+    - Waste Management Policy: evidence\policies\waste_management_policy.md
   - Projects:
-    - Case Studies Summary: evidence_library\projects\case_studies_summary.md
-    - Client References: evidence_library\projects\client_references.md
-    - Example Reports: evidence_library\projects\example_reports.md
-    - Fieldwork Capabilities: evidence_library\projects\fieldwork_capabilities.md
-    - Planning Consultancy Services: evidence_library\projects\planning_consultancy_services.md
-    - Post Excavation Services: evidence_library\projects\post_excavation_services.md
-    - Project Scale And Duration: evidence_library\projects\project_scale_and_duration.md
+    - Case Studies Summary: evidence\projects\case_studies_summary.md
+    - Client References: evidence\projects\client_references.md
+    - Example Reports: evidence\projects\example_reports.md
+    - Fieldwork Capabilities: evidence\projects\fieldwork_capabilities.md
+    - Planning Consultancy Services: evidence\projects\planning_consultancy_services.md
+    - Post Excavation Services: evidence\projects\post_excavation_services.md
+    - Project Scale And Duration: evidence\projects\project_scale_and_duration.md
