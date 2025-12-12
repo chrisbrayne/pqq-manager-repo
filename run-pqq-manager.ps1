@@ -139,11 +139,37 @@ foreach ($sourceFile in $sourceFiles) {
     [void]$draftContent.AppendLine("# Draft Response for $($sourceFile.Name)")
     [void]$draftContent.AppendLine("---")
     foreach ($q in $questions) {
-        $answer = $answeredQuestions."$q"
+        $qaResult = $answeredQuestions."$q"
+        $answer = $qaResult.answer
+        $sources = $qaResult.sources
+
         [void]$draftContent.AppendLine("### Q: $q")
         [void]$draftContent.AppendLine()
         [void]$draftContent.AppendLine($answer)
         [void]$draftContent.AppendLine()
+
+        # Add sources if available
+        if ($sources -and $sources.Count -gt 0) {
+            [void]$draftContent.Append("**Sources:** ")
+            $links = @()
+            foreach ($source in $sources) {
+                # Construct the relative path from drafts to evidence
+                # Example: source = "company/company_overview.md"
+                # Desired link: "[company_overview.md](../evidence/company/company_overview.md)"
+                # Assuming drafts are in pqq-manager/drafts and evidence in pqq-manager/evidence
+                # The path from a file in `drafts` to a file in `evidence` will be `../evidence/` followed by the source path
+                $relativePathToEvidence = Join-Path "..\" "evidence"
+                $fullRelativePath = Join-Path $relativePathToEvidence $source
+                $fullRelativePathForMarkdown = $fullRelativePath.Replace('\', '/') # Convert to forward slashes for Markdown/URL compatibility
+
+                # Extract just the filename for the link text
+                $linkText = Split-Path $source -Leaf
+
+                $links += "[$linkText]($fullRelativePathForMarkdown)"
+            }
+            [void]$draftContent.AppendLine(($links -join " | "))
+            [void]$draftContent.AppendLine() # Add an extra newline for spacing
+        }
         [void]$draftContent.AppendLine("---")
     }
 

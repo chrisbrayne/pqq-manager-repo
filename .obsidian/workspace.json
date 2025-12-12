@@ -1,0 +1,223 @@
+{
+  "main": {
+    "id": "5e35ca19bc310aa9",
+    "type": "split",
+    "children": [
+      {
+        "id": "77ce338374f82fdd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae75bb97edf026b5",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a288f551cbb3af42",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff35b79f47159553",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca09101c606be88a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "96db3fa8fa2a8d94",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "24b6273e365f99b4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cae275c5240b260b",
+    "type": "split",
+    "children": [
+      {
+        "id": "4dbcb545e78c1cae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "113f2230bd507a83",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "incoming/processed/Annex-A-Core-PQQ-questions.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Annex-A-Core-PQQ-questions"
+            }
+          },
+          {
+            "id": "f369734bc0bb3e7c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "incoming/processed/Annex-A-Core-PQQ-questions.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Annex-A-Core-PQQ-questions"
+            }
+          },
+          {
+            "id": "6e3181c8ac88b3ac",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5607253661705e41",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "5ceea4d3a942e7d3",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "incoming/processed/Annex-A-Core-PQQ-questions.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Annex-A-Core-PQQ-questions"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "ae75bb97edf026b5",
+  "lastOpenFiles": [
+    "site/404.html",
+    "site/css/fonts/fontawesome-webfont.woff",
+    "site/css/fonts/fontawesome-webfont.ttf",
+    "site/css/fonts/fontawesome-webfont.svg",
+    "site/css/fonts/fontawesome-webfont.eot",
+    "incoming/processed/PQQ_6_Sample.docx",
+    "drafts/PQQ_6_Sample.md",
+    "incoming/processed/PQQ_5_Sample.docx",
+    "drafts/PQQ_5_Sample.md",
+    "incoming/processed/PQQ_4_Sample.docx",
+    "drafts/PQQ_4_Sample.md",
+    "incoming/processed/PQQ_3_Full.docx",
+    "drafts/PQQ_3_Full.md",
+    "incoming/processed/PQQ_2_Full.docx",
+    "drafts/PQQ_2_Full.md",
+    "incoming/processed/PQQ_1_Full.docx",
+    "drafts/PQQ_1_Full.md",
+    "site/evidence/projects/project_scale_and_duration/index.html",
+    "docs/evidence/projects/project_scale_and_duration.md",
+    "docs/evidence/projects/post_excavation_services.md",
+    "docs/evidence/projects/planning_consultancy_services.md",
+    "docs/evidence/projects/fieldwork_capabilities.md",
+    "docs/evidence/projects/example_reports.md",
+    "docs/evidence/projects/client_references.md",
+    "docs/evidence/projects/case_studies_summary.md",
+    "docs/evidence/policies/waste_management_policy.md",
+    "docs/evidence/policies/quality_iso_14001.md",
+    "docs/evidence/policies/modern_slavery_declaration.md",
+    "docs/evidence/policies/environmental_strategy.md",
+    "docs/evidence/policies/equality_diversity_policy.md",
+    "docs/evidence/policies/declarations_misconduct_and_compliance.md",
+    "docs/evidence/policies/declarations_grounds_for_rejection.md",
+    "docs/evidence/policies/data_protection_gdpr.md",
+    "docs/evidence/policies/carbon_reduction_plan.md",
+    "docs/evidence/health_and_safety/health_and_safety_riddor.md",
+    "docs/evidence/health_and_safety/health_and_safety_policy.md",
+    "docs/evidence/health_and_safety/health_and_safety_competent_person.md",
+    "Documentation.canvas"
+  ]
+}

@@ -1,5 +1,18 @@
 # Project Log
 
+## 2025-12-12
+
+*   **Evidence Backlinking Feature:**
+    *   Implemented a new feature to automatically add markdown backlinks from generated answers to the source evidence files. This significantly improves traceability and makes the drafts "audit-ready."
+    *   Each generated answer now includes a `**Sources:**` section with direct, clickable, relative links to the evidence files used.
+*   **Implementation Details:**
+    *   Modified `gemini_processor.py`: Updated the prompt to instruct the AI to return a list of source filenames. Adjusted the JSON structure and error handling.
+    *   Modified `run-pqq-manager.ps1`: Updated the script to parse the new JSON structure and correctly format the source filenames into relative markdown links in the final draft file.
+*   **Bug Fix:**
+    *   Corrected an `IndentationError` in `gemini_processor.py` that was introduced during refactoring.
+    *   Fixed an issue where Obsidian failed to navigate markdown links by converting path separators from backslashes (`\`) to forward slashes (`/`) in `run-pqq-manager.ps1`.
+    *   Resolved a JSON parsing error caused by a redundant `print` statement in the error handling of `gemini_processor.py`.
+
 ## 2025-12-11 (Evening)
 
 *   **Deployment Automation:**

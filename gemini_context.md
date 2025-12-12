@@ -30,9 +30,14 @@ The "PQQ Manager" is an automation pipeline to streamline the creation and manag
 
 ---
 
-## Last Session Summary (2025-12-11)
+## Last Session Summary (2025-12-12)
 
-*   **Automated Navigation:** Implemented a Python script (`build_menu.py`) to automatically generate the navigation menu in `mkdocs.yml`, solving the "manual bottleneck" issue.
-*   **Refined Workflow:** Restructured the PowerShell scripts to support a local-first workflow. The main processing script now only creates local commits, and a new `deploy-to-github.ps1` script was created for manual, batched deployments.
-*   **Updated Documentation:** The `guide.md` file and `project_log.md` were updated to reflect all the new changes and the current workflow.
-*   **Diagnosed API Issue:** Investigated and identified a `429 Quota Exceeded` error from the Gemini API, which was resolved.
+*   **Evidence Backlinking:** Implemented a new feature to automatically add markdown backlinks from the generated answers in draft PQQ files to the source evidence files. This improves traceability and makes the drafts "audit-ready".
+*   **Implementation Details:**
+    *   Modified `gemini_processor.py` to instruct the AI to return a list of source filenames along with the answer text.
+    *   Modified `run-pqq-manager.ps1` to parse the new data structure and format the source filenames into clickable, relative markdown links within the final draft file.
+*   **Testing:** Successfully tested the new feature with a sample PQQ and verified the correctness of the generated links.
+*   **Bug Fixes:**
+    *   Resolved an issue where Obsidian would not correctly navigate links containing backslashes (`\`). Modified `run-pqq-manager.ps1` to convert all link paths to use forward slashes (`/`) for better compatibility.
+    *   Fixed a JSON parsing error in `run-pqq-manager.ps1` caused by a redundant `print` statement in `gemini_processor.py`.
+*   **Documentation:** Updated the project log and user guide to reflect the new feature.

@@ -21,7 +21,7 @@ DOCS_BUILD_DIR = os.path.join(ROOT_DIR, 'docs')
 
 # Subdirectories within DOCS_BUILD_DIR for organized content
 DRAFTS_DEST_SUBDIR_NAME = 'pqq_drafts'
-EVIDENCE_DEST_SUBDIR_NAME = 'evidence_library'
+EVIDENCE_DEST_SUBDIR_NAME = 'evidence'
 DRAFTS_DEST_SUBDIR = os.path.join(DOCS_BUILD_DIR, DRAFTS_DEST_SUBDIR_NAME)
 EVIDENCE_DEST_SUBDIR = os.path.join(DOCS_BUILD_DIR, EVIDENCE_DEST_SUBDIR_NAME)
 
@@ -97,7 +97,7 @@ def generate_and_update_nav():
                 drafts_nav.append({title: path})
             nav.append({'PQQ Drafts': drafts_nav})
 
-    # 3. Add Evidence Library (hierarchically)
+    # 3. Add Evidence (hierarchically)
     if os.path.exists(EVIDENCE_DEST_SUBDIR):
         evidence_nav = []
         # Get top-level directories (e.g., 'company', 'financial')
@@ -115,7 +115,7 @@ def generate_and_update_nav():
                 if category_files_nav:
                     evidence_nav.append({category_title: category_files_nav})
         if evidence_nav:
-            nav.append({'Evidence Library': evidence_nav})
+            nav.append({'Evidence': evidence_nav})
     
     # 4. Update mkdocs.yml
     print(f"Updating '{MKDOCS_CONFIG_FILE}' with new navigation...")
@@ -134,7 +134,7 @@ def main():
     clean_and_create_docs_build_dir()
     copy_static_docs()
     copy_content_docs()
-    generate_and_update_nav() # New step
+    generate_and_update_nav()
 
 if __name__ == "__main__":
     main()

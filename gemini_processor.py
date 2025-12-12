@@ -79,29 +79,44 @@ def find_evidence_for_batch(questions, evidence_texts):
     1.  Read the list of questions.
     2.  For each question, find the single most relevant snippet from the evidence library.
     3.  If no snippet provides a good answer for a question, use the value: "!!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!".
-    4.  Return a single JSON object where each key is the original question and the value is the matched evidence snippet text.
+    Return a single JSON object where each key is the original question. The value for each question should be an object containing two keys: "answer" (the matched evidence snippet text, or the manual review message if no match) and "sources" (a JSON array of the filenames of the evidence documents used to formulate the answer).
 
     ## JSON Question List
     {json.dumps(questions, indent=2)}
 
     ## Evidence Library
+    Each piece of evidence is prefixed with '--- Evidence File: [filename] ---'. When using evidence, extract the filename(s) from these markers.
     ---
     {evidence_texts}
     ---
 
     ## REQUIRED OUTPUT FORMAT
     Return ONLY a single valid JSON object. Do not include any other text or formatting.
+    Example output structure:
+    {{
+        "What is the company's annual turnover?": {{
+            "answer": "The company's annual turnover is £1,234,567.",
+            "sources": ["financial_accounts.md", "financial_turnover.md"]
+        }},
+        "Do you have a health and safety policy?": {{
+            "answer": "Yes, we have a comprehensive health and safety policy.",
+            "sources": ["health_and_safety_policy.md"]
+        }},
+        "What is your policy on modern slavery?": {{
+            "answer": "!!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!",
+            "sources": []
+        }}
+    }}
     """
     try:
         response = model.generate_content(prompt, request_options=request_options)
         json_response = response.text.strip().replace("`", "").replace("json", "")
         return json.loads(json_response)
     except Exception as e:
-        print(f"Error calling Gemini API for batch evidence matching: {e}")
-        # Return an error structure that PowerShell can understand
-        error_response = {q: f"!!-- GEMINI API ERROR --!! Details: {e}" for q in questions}
+        error_response = {}
+        for q in questions:
+            error_response[q] = {"answer": f"!!-- GEMINI API ERROR --!! Details: {e}", "sources": []}
         return error_response
-
 if __name__ == "__main__":
     command = sys.argv[1]
     

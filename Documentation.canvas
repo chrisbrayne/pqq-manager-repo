@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"66f6b9a308ec7cdb","type":"file","file":"project_log.md","x":-2440,"y":-1440,"width":540,"height":660},
+		{"id":"21ef46a56fbb00b5","type":"file","file":"gemini_context.md","x":-1760,"y":-1440,"width":480,"height":660},
+		{"id":"6989990ee326ec20","x":-1120,"y":-1440,"width":480,"height":660,"type":"file","file":"docs/guide.md"}
+	],
+	"edges":[]
+}

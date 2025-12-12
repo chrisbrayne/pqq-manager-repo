@@ -1,0 +1,12 @@
+{
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": false,
+  "userIgnoreFilters": [
+    "site/",
+    "docs_source/",
+    "docs/",
+    "docs_temp/"
+  ]
+}

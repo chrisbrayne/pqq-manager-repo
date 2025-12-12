@@ -27,6 +27,24 @@ The system is organized into a few key folders:
 
 ---
 
+## Understanding the Draft Output
+
+Each generated file in the `drafts/` folder is a Markdown file containing the questions from the source PQQ and the answers found by the AI. A key feature of this output is the **Sources** link provided with each answer.
+
+```markdown
+### Q: What is your company's registration number?
+
+Our company is registered in England and Wales under number 12345678.
+
+**Sources:** [company_legal_details.md](../evidence/company/company_legal_details.md)
+```
+
+-   **Traceability**: The `**Sources:**` section provides a direct, clickable link to the exact evidence file(s) the AI used to generate the answer.
+-   **Verification**: This allows you to quickly verify the information or get more context by navigating directly to the source document within the evidence library.
+-   **Audit-Ready**: This feature makes the generated drafts "audit-ready" by providing a clear trail from the answer back to the source data.
+
+---
+
 ## Setup Requirements
 
 ### Gemini API Key
