@@ -23,6 +23,8 @@ Archaeo-Consult Ltd. holds comprehensive insurance cover suitable for the scale 
 
 Certificates of insurance are available upon request.
 
+**Sources:** [professional_indemnity_insurance.md](../evidence/financial/professional_indemnity_insurance.md)
+
 ---
 ### Q: Describe your approach to Health and Safety.
 
@@ -36,6 +38,8 @@ Archaeo-Consult Ltd. is committed to ensuring the health, safety, and welfare of
 *   We provide ongoing training, information, and supervision to ensure a safe working environment for all.
 *   A full copy of our Health & Safety policy is available upon request.
 
+**Sources:** [health_and_safety_policy.md](../evidence/health_and_safety/health_and_safety_policy.md)
+
 ---
 ### Q: Provide details of your quality management system.
 
@@ -47,6 +51,8 @@ Archaeo-Consult Ltd. is committed to ensuring the health, safety, and welfare of
 # Health & Safety: RIDDOR Incidents
 
 Archaeo-Consult Ltd. maintains an excellent safety record. We can confirm there have been zero RIDDOR (Reporting of Injuries, Diseases and Dangerous Occurrences Regulations) reportable incidents in the past three years.
+
+**Sources:** [health_and_safety_riddor.md](../evidence/health_and_safety/health_and_safety_riddor.md)
 
 ---
 ### Q: Provide your carbon reduction plan.
@@ -64,6 +70,8 @@ Archaeo-Consult Ltd. is committed to achieving Net Zero emissions by 2040. Our C
 
 Our carbon footprint is measured annually, and our plan is reviewed and updated to ensure we meet our Net Zero targets.
 
+**Sources:** [carbon_reduction_plan.md](../evidence/policies/carbon_reduction_plan.md)
+
 ---
 ### Q: Provide details on your data protection (GDPR) compliance.
 
@@ -72,6 +80,8 @@ Our carbon footprint is measured annually, and our plan is reviewed and updated 
 Archaeo-Consult Ltd. is fully compliant with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. We are registered with the Information Commissioner's Office (ICO).
 
 Our data protection policy outlines our commitment to handling personal data lawfully, fairly, and transparently, ensuring confidentiality, integrity, and availability. All staff receive regular GDPR training.
+
+**Sources:** [data_protection_gdpr.md](../evidence/policies/data_protection_gdpr.md)
 
 ---
 ### Q: Outline your equality and diversity policy.
@@ -82,6 +92,8 @@ Archaeo-Consult Ltd. is an Equal Opportunities Employer and is committed to fost
 
 Our Equality, Diversity, and Inclusion Policy ensures that no employee, job applicant, or contractor receives less favourable treatment on the grounds of age, disability, gender reassignment, marriage and civil partnership, pregnancy and maternity, race, religion or belief, sex, or sexual orientation. We actively promote diversity within our workforce and throughout our operations.
 
+**Sources:** [equality_diversity_policy.md](../evidence/policies/equality_diversity_policy.md)
+
 ---
 ### Q: Provide a modern slavery declaration.
 
@@ -90,6 +102,8 @@ Our Equality, Diversity, and Inclusion Policy ensures that no employee, job appl
 Archaeo-Consult Ltd. is committed to conducting business ethically and with integrity. We have a zero-tolerance approach to modern slavery and human trafficking within our operations and supply chains.
 
 We take all reasonable steps to ensure that our business and supply chains are free from slavery and human trafficking. Our policies and procedures are reviewed regularly to reflect this commitment.
+
+**Sources:** [modern_slavery_declaration.md](../evidence/policies/modern_slavery_declaration.md)
 
 ---
 
