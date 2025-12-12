@@ -22,6 +22,7 @@ Archaeo-Consult Ltd. employs a dedicated team of 35 full-time staff. This includ
 - **Finds & Post-Excavation Specialists:** 3
 - **Administrative & Support Staff:** 2
 
+**Sources:** [staffing_levels.md](../evidence/company/staffing_levels.md)
 
 ---
 ### Q: Scenario: A contractor requests recording time be halved due to programme delays. Describe three possible responses and the ethical implications of each.
@@ -29,17 +30,7 @@ Archaeo-Consult Ltd. employs a dedicated team of 35 full-time staff. This includ
 !!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
 
 ---
-### Q: Describe the Notifications in a decision flow for human remains discovered at 4pm on a Friday.
-
-!!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
-
----
-### Q: Describe the Stabilisation actions in a decision flow for human remains discovered at 4pm on a Friday.
-
-!!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
-
----
-### Q: Describe the Documentation steps in a decision flow for human remains discovered at 4pm on a Friday.
+### Q: Scenario: Human remains are discovered at 4pm on a Friday. Provide a decision flow describing: Notifications; Stabilisation actions; Documentation steps.
 
 !!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
 
@@ -49,7 +40,7 @@ Archaeo-Consult Ltd. employs a dedicated team of 35 full-time staff. This includ
 !!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
 
 ---
-### Q: For each competence area (Controlled Excavation, Geo-spatial Recording (GPS/Drone), Finds & Environmental Processing, Community Engagement, Archival Preparation), provide a self-score (0-4), indicate if evidence is provided (Y/N), and supply a description (40 words max).
+### Q: For each competence provide: Self-score (0?4); Evidence Provided? (Y/N); Description (40 words max).
 
 !!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
 
@@ -60,24 +51,10 @@ Archaeo-Consult Ltd. employs a dedicated team of 35 full-time staff. This includ
 
 Archaeo-Consult Ltd. maintains a portfolio of anonymised example reports (Desk-Based Assessments, Evaluation Reports, Excavation Reports) that can be provided to clients upon request to demonstrate our reporting standards and quality. Links to published reports are also available where applicable.
 
+**Sources:** [example_reports.md](../evidence/projects/example_reports.md)
 
 ---
-### Q: Provide operational readiness time (hours) for: Mobilising a 3-person team.
-
-!!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
-
----
-### Q: Provide operational readiness time (hours) for: Mobilising a 7-person team.
-
-!!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
-
----
-### Q: Provide operational readiness time (hours) for: Deploying post-excavation staff.
-
-!!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
-
----
-### Q: Explain factors that may double or halve the stated times (for operational readiness).
+### Q: Provide operational readiness time (hours) for: Mobilising a 3-person team; Mobilising a 7-person team; Deploying post-excavation staff. Explain factors that may double or halve the stated times.
 
 !!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
 
@@ -97,32 +74,7 @@ Archaeo-Consult Ltd. maintains a portfolio of anonymised example reports (Desk-B
 !!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
 
 ---
-### Q: Declare COMPLIANT / NON-COMPLIANT / QUALIFIED COMPLIANCE for: Human Tissue Act.
-
-!!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
-
----
-### Q: Declare COMPLIANT / NON-COMPLIANT / QUALIFIED COMPLIANCE for: Treasure Act.
-
-!!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
-
----
-### Q: Declare COMPLIANT / NON-COMPLIANT / QUALIFIED COMPLIANCE for: Heritage Environment Record (HER) deposition rules.
-
-Reporting: Production of high-quality, illustrated reports (grey literature) suitable for submission to the client and the local Historic Environment Record (HER). Archive Preparation: Compilation and deposition of the project archive with a recognised museum or repository.
-
----
-### Q: Declare COMPLIANT / NON-COMPLIANT / QUALIFIED COMPLIANCE for: CDM Regulations.
-
-We comply fully with the requirements of the Construction (Design and Management) Regulations 2015.
-
----
-### Q: Declare COMPLIANT / NON-COMPLIANT / QUALIFIED COMPLIANCE for: Digital archive standards (ADS/OASIS).
-
-!!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
-
----
-### Q: Provide short explanations where relevant (for compliance declarations).
+### Q: Declare COMPLIANT / NON-COMPLIANT / QUALIFIED COMPLIANCE for: Human Tissue Act; Treasure Act; Heritage Environment Record (HER) deposition rules; CDM Regulations; Digital archive standards (ADS/OASIS). Provide short explanations where relevant.
 
 !!-- NO MATCH FOUND. PLEASE ANSWER MANUALLY --!!
 
@@ -145,6 +97,8 @@ We comply fully with the requirements of the Construction (Design and Management
 ### Q: Provide a signed declaration confirming accuracy of all submitted information.
 
 A signed declaration can be provided upon request.
+
+**Sources:** [declarations_grounds_for_rejection.md](../evidence/policies/declarations_grounds_for_rejection.md)
 
 ---
 
