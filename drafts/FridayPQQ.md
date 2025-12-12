@@ -16,24 +16,13 @@ Registered Address: 123 Heritage Lane, Anytown, AN1 2BC, United Kingdom.
 ---
 ### Q: Can you provide evidence of your Professional Indemnity Insurance?
 
-# Professional Indemnity & Public Liability Insurance
-
 Archaeo-Consult Ltd. holds comprehensive insurance cover suitable for the scale and nature of our projects.
 
-*   **Professional Indemnity Insurance:**
-    *   **Provider:** [Insurance Company Name]
-    *   **Policy Number:** [Policy Number]
-    *   **Coverage Limit:** ??5,000,000 per claim
+Professional Indemnity Insurance:
 
-*   **Public Liability Insurance:**
-    *   **Provider:** [Insurance Company Name]
-    *   **Policy Number:** [Policy Number]
-    *   **Coverage Limit:** ??10,000,000
-
-*   **Employers' Liability Insurance:**
-    *   **Provider:** [Insurance Company Name]
-    *   **Policy Number:** [Policy Number]
-    *   **Coverage Limit:** ??10,000,000
+Provider: [Insurance Company Name]
+Policy Number: [Policy Number]
+Coverage Limit: ??5,000,000 per claim
 
 Certificates of insurance are available upon request.
 
@@ -47,20 +36,16 @@ Certificates of insurance are available upon request.
 ---
 ### Q: Have you had any RIDDOR incidents in the past 3 years? If so, please list them.
 
-# Health & Safety: Accident Log
+Archaeo-Consult Ltd. maintains an excellent safety record. We can confirm there have been zero RIDDOR (Reporting of Injuries, Diseases and Dangerous Occurrences Regulations) reportable incidents in the past three years.
 
-Archaeo-Consult Ltd. maintains a comprehensive accident and incident log in accordance with health and safety regulations. We can confirm that for the past three years, our accident log shows no major injuries, reportable incidents under RIDDOR, or significant near-misses.
-
-**Sources:** [health_and_safety_accident_log.md](../evidence/health_and_safety/health_and_safety_accident_log.md)
+**Sources:** [health_and_safety_riddor.md](../evidence/health_and_safety/health_and_safety_riddor.md)
 
 ---
 ### Q: Do you have a carbon reduction plan? Please describe it.
 
-# Carbon Reduction Plan
-
 Archaeo-Consult Ltd. is committed to achieving Net Zero emissions by 2040. Our Carbon Reduction Plan outlines our strategy for minimising our carbon footprint.
 
-**Current Initiatives:**
+Current Initiatives:
 - Promoting remote working and digital meetings to reduce travel.
 - Optimising project logistics to minimise vehicle mileage.
 - Migrating to a fleet of electric or hybrid vehicles.
@@ -74,8 +59,6 @@ Our carbon footprint is measured annually, and our plan is reviewed and updated 
 ---
 ### Q: How do you ensure data protection (GDPR) compliance?
 
-# Data Protection and GDPR Compliance
-
 Archaeo-Consult Ltd. is fully compliant with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018. We are registered with the Information Commissioner's Office (ICO).
 
 Our data protection policy outlines our commitment to handling personal data lawfully, fairly, and transparently, ensuring confidentiality, integrity, and availability. All staff receive regular GDPR training.
@@ -84,8 +67,6 @@ Our data protection policy outlines our commitment to handling personal data law
 
 ---
 ### Q: Can you provide a modern slavery declaration?
-
-# Modern Slavery and Human Trafficking Declaration
 
 Archaeo-Consult Ltd. is committed to conducting business ethically and with integrity. We have a zero-tolerance approach to modern slavery and human trafficking within our operations and supply chains.
 
